@@ -803,6 +803,8 @@ export const PostTypes = {
     REMOVE_LINK_PREVIEW: 'remove_link_preview',
     ME: 'me',
     REMINDER: 'reminder',
+    CUSTOM_CALLS: 'custom_calls',
+    CUSTOM_CALLS_RECORDING: 'custom_calls_recording',
 };
 
 export const StatTypes = keyMirror({
@@ -931,7 +933,7 @@ export const JobTypes = {
     BLEVE_POST_INDEXING: 'bleve_post_indexing',
     LDAP_SYNC: 'ldap_sync',
     MESSAGE_EXPORT: 'message_export',
-};
+} as const;
 
 export const JobStatuses = {
     PENDING: 'pending',
